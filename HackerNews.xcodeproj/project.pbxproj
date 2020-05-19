@@ -15,6 +15,10 @@
 		0FE8322E24744BFB00DF91F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE8322C24744BFB00DF91F3 /* LaunchScreen.storyboard */; };
 		0FE8323924744BFC00DF91F3 /* HackerNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8323824744BFC00DF91F3 /* HackerNewsTests.swift */; };
 		0FE8324424744BFC00DF91F3 /* HackerNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8324324744BFC00DF91F3 /* HackerNewsUITests.swift */; };
+		0FE8325324744EB800DF91F3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8325224744EB800DF91F3 /* NetworkManager.swift */; };
+		0FE832552474504800DF91F3 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE832542474504800DF91F3 /* PostData.swift */; };
+		0FE83258247455A600DF91F3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE83257247455A600DF91F3 /* DetailView.swift */; };
+		0FE8325A24745BF000DF91F3 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8325924745BF000DF91F3 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		0FE8323F24744BFC00DF91F3 /* HackerNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE8324324744BFC00DF91F3 /* HackerNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsUITests.swift; sourceTree = "<group>"; };
 		0FE8324524744BFC00DF91F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FE8325224744EB800DF91F3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0FE832542474504800DF91F3 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		0FE83257247455A600DF91F3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0FE8325924745BF000DF91F3 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,10 @@
 		0FE8322024744BF300DF91F3 /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				0FE8325124744E8800DF91F3 /* Models */,
 				0FE8322124744BF300DF91F3 /* AppDelegate.swift */,
 				0FE8322324744BF300DF91F3 /* SceneDelegate.swift */,
-				0FE8322524744BF300DF91F3 /* ContentView.swift */,
+				0FE832562474559400DF91F3 /* Views */,
 				0FE8322724744BFB00DF91F3 /* Assets.xcassets */,
 				0FE8322C24744BFB00DF91F3 /* LaunchScreen.storyboard */,
 				0FE8322F24744BFB00DF91F3 /* Info.plist */,
@@ -134,6 +143,25 @@
 				0FE8324524744BFC00DF91F3 /* Info.plist */,
 			);
 			path = HackerNewsUITests;
+			sourceTree = "<group>";
+		};
+		0FE8325124744E8800DF91F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8325224744EB800DF91F3 /* NetworkManager.swift */,
+				0FE832542474504800DF91F3 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0FE832562474559400DF91F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8322524744BF300DF91F3 /* ContentView.swift */,
+				0FE83257247455A600DF91F3 /* DetailView.swift */,
+				0FE8325924745BF000DF91F3 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE832552474504800DF91F3 /* PostData.swift in Sources */,
+				0FE83258247455A600DF91F3 /* DetailView.swift in Sources */,
+				0FE8325324744EB800DF91F3 /* NetworkManager.swift in Sources */,
 				0FE8322224744BF300DF91F3 /* AppDelegate.swift in Sources */,
 				0FE8322424744BF300DF91F3 /* SceneDelegate.swift in Sources */,
 				0FE8322624744BF300DF91F3 /* ContentView.swift in Sources */,
+				0FE8325A24745BF000DF91F3 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
